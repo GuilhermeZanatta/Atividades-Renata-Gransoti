@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
+    <!-- Metadados essenciais da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 1</title>
+    <title>Filmes Favoritos - Portal de Cinema</title>
+    <!--Icone de filme para a aba-->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='14' font-size='16'%3E🎬%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-    
+    <header>
+        <h1>Meu portal de filmes favoritos</h1>
+        <p>Um pequeno site dividido em páginas para cada título.</p>
+    </header>
+
+    <!--Quase uma navegação-->
+    <nav aria-label="Navegação principal do portal de filmes">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#filmes">Filmes</a></li>
+            <li><a href="#generos">Por que gosto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--Sobre o site no geral-->
+        <section id="sobre">
+            <h2>Sobre este site</h2>
+            <p>Este site apresenta quatro filmes que marcaram meu interesse por cinema, cada um em uma página separada para facilitar a leitura.</p>
+            <p>A ideia é manter uma estrutura semântica clara e usar imagens para ilustrar cada filme e o conjunto principal.</p>
+        </section>
+
+        <!--Lista ordenada dos filmes a serem tratados-->
+        <section id="filmes">
+            <h2>Lista dos filmes</h2>
+            <p>Os filmes estão ordenados pelo impacto pessoal que tiveram na minha forma de ver histórias.</p>
+            <ol>
+                <li><a href="SLPage.html">O silêncio dos inocentes</a></li>
+                <li><a href="ScreamPage.html">Pânico</a></li>
+                <li><a href="ArrivelPage.html">A chegada</a></li>
+                <li><a href="BeforePage.html">Antes do amanhecer</a></li>
+            </ol>
+
+            <!--Imagem "spoiler" dos filmes a serem desenvolvidos-->
+            <figure>
+                <img src="topFilms.png" alt="Coleção de filmes preferidos mostrando capas e pôsteres" />
+                <figcaption>Imagem representativa dos filmes favoritos tirada do letterboxd.</figcaption>
+            </figure>
+        </section>
+
+        <!--Lista não ordenada -->
+        <section id="generos">
+            <h2>Porque gosto desses filmes</h2>
+            <p>Estes são alguns elementos que me atraem neste conjunto de filmes.</p>
+            <ul>
+                <li>Histórias intensas e personagens complexos.</li>
+                <li>Direção de fotografia e ambientação marcantes.</li>
+                <li>A maioria deles está no gênero terror, porém há um exemplo de ficção científica e um de romance</li>
+            </ul>
+        </section>
+
+        <!-- Referência de link externo para meu letterboxd-->
+        <section id="referencias">
+            <h2>Referências externas</h2>
+            <p>Para conhecer mais sobre cinema e descobrir outros filmes interessantes, confira uma fonte confiável.</p>
+            <a href="https://letterboxd.com/malfe/" target="_blank">Letterboxd</a>
+        </section>
+    </main>
 </body>
 </html>
