@@ -1,0 +1,12 @@
+table{
+    width: 50%;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px outset black;
+    padding: 8px;
+    text-align: center;
+}
+caption{
+    margin: 8px;
+}
