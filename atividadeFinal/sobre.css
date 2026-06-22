@@ -153,6 +153,17 @@ a {
     margin-bottom: 10px;
 }
 
+.card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h3 .emoji {
+    font-size: 20px;
+    line-height: 1;
+}
+
 .card p {
     color: #ddd;
 }

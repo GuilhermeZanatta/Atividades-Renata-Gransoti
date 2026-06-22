@@ -150,6 +150,9 @@ a {
   align-items: center;
 }
 
+.gallery a { display: block; }
+.gallery a img { cursor: zoom-in; }
+
 .gallery img {
   flex: 0 0 calc(50% - 12px);
   max-width: calc(50% - 12px);
