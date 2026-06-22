@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sobre.css">
+    <title>Sobre</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='14' font-size='16'%3E🪪%3C/text%3E%3C/svg%3E"
+    />
+</head>
+<body>
+
+<nav id="navbar">
+    <a href="index.html">Início</a>
+    <a href="projetos.html">Projetos</a>
+    <a href="sobre.html" class="active">Sobre</a>
+</nav>
+
+<main class="sobre">
+
+    <section class="perfil">
+        <img src="img/perfil.jpeg" alt="Foto de Guilherme" class="foto">
+
+        <div class="texto">
+            <h1>Sobre Mim</h1>
+
+            <p>
+                Meu nome é Guilherme Zanatta e atualmente curso Engenharia de Software.
+            </p>
+
+            <p>
+                Atualmente atuo como Suporte Técnico na empresa Termoplex. Além das atividades da função, participo do desenvolvimento de sistemas internos para otimizar processos da empresa. Entre os projetos desenvolvidos, destaca-se uma API de controle de estoque e custos, já implementada e utilizada pelos colaboradores. Também estou desenvolvendo um sistema de gerenciamento de viagens, que atualmente se encontra em fase de desenvolvimento.
+            </p>
+
+            <p>
+                Estou constantemente buscando aprender novas tecnologias através de projetos pessoais, estudos e experiências práticas. Atualmente também estudo eletrônica, pois tenho como objetivo profissional atuar na área de sistemas embarcados, unindo conhecimentos de hardware e software para o desenvolvimento de soluções tecnológicas.
+            </p>
+        </div>
+    </section>
+
+    <section class="habilidades">
+        <h2>Habilidades</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Front-End</h3>
+                <p>HTML, CSS, JavaScript, Vue.js</p>
+            </div>
+
+            <div class="card">
+                <h3>Back-End</h3>
+                <p>Node.js, APIs REST</p>
+            </div>
+
+            <div class="card">
+                <h3>Banco de Dados</h3>
+                <p>MongoDB, SQL</p>
+            </div>
+
+            <div class="card">
+                <h3>Ferramentas</h3>
+                <p>Git, GitHub, Docker, Linux</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+<script>
+VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2
+});
+</script>
+
+</body>
+</html>
+</body>
+</html>

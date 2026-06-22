@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="projetos.css" />
+    <title>Projetos</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='14' font-size='16'%3E🪪%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html">Início</a>
+      <a href="projetos.html" class="active">Projetos</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+
+    <main class="projetos">
+      <h1>Meus Projetos</h1>
+
+      <section class="cards">
+        <article class="card">
+          <h2>API de Estoque</h2>
+
+          <p>
+            Sistema interno desenvolvido para controle de estoque, movimentação
+            de materiais e acompanhamento de custos.
+          </p>
+
+          <span class="tecnologias"> Node.js • MongoDB • Vue.js </span>
+
+          <div class="gallery">
+            <img src="img/estoque1.jpeg" alt="Tela de cadastro de produtos" />
+          </div>
+
+          <p>
+            Projeto utilizado na empresa
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Sistema de Viagens</h2>
+
+          <p>
+            Plataforma para gerenciamento de viagens corporativas, solicitações
+            e acompanhamento de aprovações.
+          </p>
+
+          <span class="tecnologias"> Vue.js • Node.js • MongoDB </span>
+
+          <div class="gallery">
+            <img src="img/viagem.jpeg" alt="Tela de escolha" />
+          </div>
+          <p>
+            Projeto ainda em andamento e utilizado na empresa
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Piratas do Atuba</h2>
+
+          <p>
+            Jogo educacional desenvolvido na Godot inspirado em iniciativas de
+            preservação ambiental e reciclagem.
+          </p>
+
+          <span class="tecnologias"> Godot • GDScript </span>
+
+          <div class="gallery">
+            <img src="img/piratasAtuba.jpeg" alt="Tela inicial jogo" />
+          </div>
+
+          <div class="links">
+            <a href="https://github.com/RodrigoEsR/Piratas-do-Atuba" target="_blank">GitHub</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 8,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.1,
+        scale: 1.03,
+      });
+    </script>
+  </body>
+</html>

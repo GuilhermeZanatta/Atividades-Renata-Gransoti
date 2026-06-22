@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+body {
+  background: linear-gradient(135deg, #31363b 0%, #101013 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family:
+    "Montserrat",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+}
+
+a {
+  color: aliceblue;
+  text-align: justify;
+}
+
+/* Padrão */
+#navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #333;
+  padding: 15px 25px;
+  border-radius: 12px;
+
+  display: flex;
+  gap: 20px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#navbar a.active {
+    background-color: #555;
+    font-weight: 700;
+}
+
+#navbar a:hover {
+    background-color: #444;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #navbar {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #333;
+    padding: 15px 25px;
+    border-radius: 12px;
+
+    display: flex;
+    gap: 20px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.sobre {
+    max-width: 1100px;
+    margin: 120px auto 50px;
+    padding: 20px;
+    color: white;
+}
+
+.perfil {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+
+    max-width: 1100px;
+    margin: 0 auto 80px;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(127, 179, 255, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.foto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 36px rgba(127, 179, 255, 0.12);
+    border-color: rgba(127, 179, 255, 0.8);
+}
+
+.texto h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #7fb3ff;
+}
+
+.texto p {
+    line-height: 1.8;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.texto {
+    max-width: 800px;
+}
+
+.habilidades h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #7fb3ff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(127,179,255,0.2);
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #7fb3ff;
+}
+
+.card h3 {
+    color: #7fb3ff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ddd;
+}
+
+/* Mobile aqui também*/
+@media (max-width: 768px) {
+    .perfil {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "foto"
+            "texto";
+
+        justify-items: center;
+        text-align: center;
+    }
+
+    .foto {
+        grid-area: foto;
+        width: 180px;
+        height: 180px;
+    }
+
+    .texto {
+        grid-area: texto;
+    }
+}
