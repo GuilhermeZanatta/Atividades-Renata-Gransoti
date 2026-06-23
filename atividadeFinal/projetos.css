@@ -199,3 +199,12 @@ a {
     max-width: 100%;
   }
 }
+
+.footer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 40px 16px 40px;
+  margin-top: 40px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}

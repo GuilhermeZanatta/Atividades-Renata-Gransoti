@@ -191,3 +191,11 @@ a {
         grid-area: texto;
     }
 }
+
+.footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px 16px 30px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
